@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: demo-client
+  cloud:
+    loadbalancer:
+      simple:
+        instances:
+          demo-service:
+            - uri: http://localhost:8082
+            - uri: http://localhost:8083
